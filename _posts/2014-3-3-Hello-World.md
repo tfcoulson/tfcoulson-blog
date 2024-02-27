@@ -1,10 +1,8 @@
 ---
 layout: post
-title: You're up and running!
+title: Golden Ticket Attacks using Impacket
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+After playing about with Mimikatz for a bit and looking at a few options to bypass the anti virus, I decided a different approach might make more sense.
+Impacket contains a number of tools that can be used to obtain the krbtg hash and the domain SID, and then to create a golden ticket offline.
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
